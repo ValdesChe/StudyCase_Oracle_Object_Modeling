@@ -59,4 +59,3 @@ Case of study :  [Football Championship mangement](http://lecurseur.e-monsite.co
             DEREF(VALUE(bt).joueur_).nationalite AS nationaliteJoueur,
             COUNT(VALUE(bt)) AS total 
            FROM matches_ m, TABLE(m.buts) bt GROUP BY DEREF(VALUE(bt).joueur_)  ORDER BY total DESC;
-      ~~~~
